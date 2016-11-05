@@ -1,3 +1,19 @@
+@import url("https://fonts.googleapis.com/css?family=Open+Sans:400,700,800");
+/*
+ * DEFAULT
+ */
+body {
+  font-family: "Open Sans", sans-serif;
+  font-weight: normal; }
 
+/*
+ * HEADER
+ */
+header {
+  background-image: url("../images/bg-nyc.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center bottom;
+  height: 100vh; }
 
 /*# sourceMappingURL=style.css.map */
