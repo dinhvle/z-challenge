@@ -1,7 +1,7 @@
 // Google Fonts
-@import url('https://fonts.googleapis.com/css?family=Open+Sans:400,700,800');
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:400,700');
 
-//Variables
+// Variables
 $open-sans: 'Open Sans', sans-serif;
 $white-color: #ffffff;
 $grey-color: #4a4a4a;
@@ -24,10 +24,19 @@ h2 {
   font-size: 42px;
   font-weight: 400;
 }
+h3 {
+  font-size: 24px;
+  font-weight: 400;
+  margin: $rs * 2 0;
+}
+h4 {
+  font-size: 20px;
+  font-weight: 400;
+}
 p {
   font-size: 16px;
   line-height: 26px;
-  margin-top: $rs * 2;
+  margin: $rs * 2 0;
 }
 /*
  * HEADER
@@ -168,6 +177,7 @@ header {
     }
   }
 }
+
 /*
  * MAIN CONTENT
  */
@@ -195,4 +205,14 @@ section {
       }
     }
   }
+}
+.app-name {
+  margin-top: $rs / 2;
+}
+
+/*
+ * FOOTER
+ */
+footer {
+  margin: $rs * 5 0;
 }

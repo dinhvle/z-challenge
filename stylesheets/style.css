@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css?family=Open+Sans:400,700,800");
+@import url("https://fonts.googleapis.com/css?family=Open+Sans:400,700");
 /*
  * DEFAULT
  */
@@ -14,10 +14,19 @@ h2 {
   font-size: 42px;
   font-weight: 400; }
 
+h3 {
+  font-size: 24px;
+  font-weight: 400;
+  margin: 30px 0; }
+
+h4 {
+  font-size: 20px;
+  font-weight: 400; }
+
 p {
   font-size: 16px;
   line-height: 26px;
-  margin-top: 30px; }
+  margin: 30px 0; }
 
 /*
  * HEADER
@@ -150,5 +159,14 @@ section {
       height: 3px;
       margin: 30px auto;
       width: 30px; }
+
+.app-name {
+  margin-top: 7.5px; }
+
+/*
+ * FOOTER
+ */
+footer {
+  margin: 75px 0; }
 
 /*# sourceMappingURL=style.css.map */
