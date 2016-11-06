@@ -3,24 +3,84 @@
 
 //Variables
 $open-sans: 'Open Sans', sans-serif;
-$rs: 16px;
+$white-color: #ffffff;
+$grey-color: #4a4a4a;
+$blue-color: #1cbeec;
+$rs: 15px;
 
 /*
  * DEFAULT
  */
 body {
   font-family: $open-sans;
-  font-weight: normal;
+  font-weight: 400;
 }
-
 
 /*
  * HEADER
  */
 header {
+  position: relative;
   background-image:url("../images/bg-nyc.png");
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center bottom;
   height: 100vh;
+  color: $white-color;
+  .info-center {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+  }
+  .logo {
+    margin-top: $rs * 3;
+    max-height: $rs * 2;
+  }
+  h1 {
+    font-size: 72px;
+    font-weight: 700;
+  }
+  p {
+    font-size: 18px;
+    line-height: 26px;
+    margin-top: $rs;
+  }
+}
+
+/*
+ * NAVIGATION
+ */
+.breadcrumb {
+  padding: 10px 0;
+  background-color: $white-color;
+  border-radius: 0;
+  .active a {
+    border-bottom: 2px solid $blue-color;
+    padding-bottom: 8px;
+  }
+  li {
+    font-size: 14px;
+  }
+  li + li:before {
+    content: "\276F\00a0";
+    color: $grey-color;
+    padding: 0 $rs;
+  }
+  a {
+    color: $grey-color;
+    &:hover {
+      text-decoration: none;
+      color: $blue-color;
+    }
+  }
+}
+
+/*
+ * MAIN CONTENT
+ */
+main {
+  p {
+    font-size: 16px;
+    color: $grey-color;
+  }
 }
