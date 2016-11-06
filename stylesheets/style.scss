@@ -27,6 +27,7 @@ h2 {
 p {
   font-size: 16px;
   line-height: 26px;
+  margin-top: $rs * 2;
 }
 /*
  * HEADER
@@ -90,7 +91,7 @@ header {
 }
 
 /*
- * CATEGORIES
+ * CATEGORIES (not perfect implementation of this, flexbox is better but no IE9 support)
  */
 // Custom column classes (2.4 * 5 = 12) easier if bootstrap sass or less mixins was used
 .col-xs-2-4,
@@ -126,6 +127,47 @@ header {
   }
 }
 
+.categories {
+  padding-bottom: $rs * 10;
+  border-bottom: 2px solid $lightgrey-color;
+  margin-top: $rs * 5;
+  h1 {
+    font-size: 26px;
+    font-weight: 400;
+    color: $grey-color;
+    text-align: center;
+    margin-bottom: $rs * 3;
+  }
+  .category {
+    display: block;
+    height: $rs * 10;
+    width: $rs * 10;
+    padding: 3px;
+    margin: 20px 10px 10px 10px;
+    border-radius: 5px;
+    box-shadow: 0 0 5px rgba(0,0,0,0.20);
+    a {
+      padding: $rs * 3 0;
+      display: block;
+      img {
+        max-height: $rs * 3;
+        display: block;
+        margin: auto;
+      }
+    }
+    button {
+      display: block;
+      color: $white-color;
+      background-color: $blue-color;
+      border-radius: 30px;
+      border: none;
+      cursor: pointer;
+      width: 120px;
+      margin: 0 auto $rs auto;
+
+    }
+  }
+}
 /*
  * MAIN CONTENT
  */
@@ -133,12 +175,13 @@ main {
   color: $grey-color;
 }
 section {
-  margin-top: $rs * 10;
+  border-bottom: 2px solid $lightgrey-color;
+  padding: $rs * 10 0;
   .section-title {
     img {
       display: block;
       margin: 0 auto;
-      max-height: $rs * 3;
+      max-height: $rs * 2.5;
     }
     h2 {
       text-align: center;

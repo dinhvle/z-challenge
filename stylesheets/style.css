@@ -16,7 +16,8 @@ h2 {
 
 p {
   font-size: 16px;
-  line-height: 26px; }
+  line-height: 26px;
+  margin-top: 30px; }
 
 /*
  * HEADER
@@ -65,7 +66,7 @@ header {
       color: #1cbeec; }
 
 /*
- * CATEGORIES
+ * CATEGORIES (not perfect implementation of this, flexbox is better but no IE9 support)
  */
 .col-xs-2-4,
 .col-sm-2-4,
@@ -92,6 +93,41 @@ header {
   .col-lg-2-4 {
     width: 20%;
     float: left; } }
+.categories {
+  padding-bottom: 150px;
+  border-bottom: 2px solid #dedede;
+  margin-top: 75px; }
+  .categories h1 {
+    font-size: 26px;
+    font-weight: 400;
+    color: #4a4a4a;
+    text-align: center;
+    margin-bottom: 45px; }
+  .categories .category {
+    display: block;
+    height: 150px;
+    width: 150px;
+    padding: 3px;
+    margin: 20px 10px 10px 10px;
+    border-radius: 5px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.2); }
+    .categories .category a {
+      padding: 45px 0;
+      display: block; }
+      .categories .category a img {
+        max-height: 45px;
+        display: block;
+        margin: auto; }
+    .categories .category button {
+      display: block;
+      color: #ffffff;
+      background-color: #1cbeec;
+      border-radius: 30px;
+      border: none;
+      cursor: pointer;
+      width: 120px;
+      margin: 0 auto 15px auto; }
+
 /*
  * MAIN CONTENT
  */
@@ -99,11 +135,12 @@ main {
   color: #4a4a4a; }
 
 section {
-  margin-top: 150px; }
+  border-bottom: 2px solid #dedede;
+  padding: 150px 0; }
   section .section-title img {
     display: block;
     margin: 0 auto;
-    max-height: 45px; }
+    max-height: 37.5px; }
   section .section-title h2 {
     text-align: center; }
     section .section-title h2:after {
