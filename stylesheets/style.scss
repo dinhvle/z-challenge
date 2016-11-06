@@ -5,6 +5,7 @@
 $open-sans: 'Open Sans', sans-serif;
 $white-color: #ffffff;
 $grey-color: #4a4a4a;
+$lightgrey-color: #dedede;
 $blue-color: #1cbeec;
 $rs: 15px;
 
@@ -15,7 +16,18 @@ body {
   font-family: $open-sans;
   font-weight: 400;
 }
-
+h1 {
+  font-size: 72px;
+  font-weight: 700;
+}
+h2 {
+  font-size: 42px;
+  font-weight: 400;
+}
+p {
+  font-size: 16px;
+  line-height: 26px;
+}
 /*
  * HEADER
  */
@@ -36,20 +48,22 @@ header {
     margin-top: $rs * 3;
     max-height: $rs * 2;
   }
-  h1 {
-    font-size: 72px;
-    font-weight: 700;
-  }
   p {
     font-size: 18px;
     line-height: 26px;
     margin-top: $rs;
+    color: $white-color;
   }
 }
 
 /*
  * NAVIGATION
  */
+// nav {
+//   height: 42px;
+//   border-bottom: 2px solid $lightgrey-color;
+// }
+
 .breadcrumb {
   padding: 10px 0;
   background-color: $white-color;
@@ -76,11 +90,66 @@ header {
 }
 
 /*
+ * CATEGORIES
+ */
+// Custom column classes (2.4 * 5 = 12) easier if bootstrap sass or less mixins was used
+.col-xs-2-4,
+.col-sm-2-4,
+.col-md-2-4,
+.col-lg-2-4 {
+  position: relative;
+  min-height: 1px;
+  padding-right: 10px;
+  padding-left: 10px;
+}
+
+.col-xs-2-4 {
+  width: 20%;
+  float: left;
+}
+@media (min-width: 768px) {
+  .col-sm-2-4 {
+    width: 20%;
+    float: left;
+  }
+}
+@media (min-width: 992px) {
+  .col-md-2-4 {
+    width: 20%;
+    float: left;
+  }
+}
+@media (min-width: 1200px) {
+  .col-lg-2-4 {
+    width: 20%;
+    float: left;
+  }
+}
+
+/*
  * MAIN CONTENT
  */
 main {
-  p {
-    font-size: 16px;
-    color: $grey-color;
+  color: $grey-color;
+}
+section {
+  margin-top: $rs * 10;
+  .section-title {
+    img {
+      display: block;
+      margin: 0 auto;
+      max-height: $rs * 3;
+    }
+    h2 {
+      text-align: center;
+      &:after {
+        content: " ";
+        background-color: $blue-color;
+        display: block;
+        height: 3px;
+        margin: $rs * 2 auto;
+        width: $rs * 2;
+      }
+    }
   }
 }
