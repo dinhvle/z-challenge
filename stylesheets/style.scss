@@ -266,3 +266,17 @@ section {
 footer {
   margin: $rs * 5 0;
 }
+
+/*
+ * MAKE SPLASH SCREEN RESPONSIVE
+ */
+ @media screen and (max-width: 767px) {
+   header {
+     h1 {
+       font-size: 36px;
+     }
+     p {
+       font-size: 14px;
+     }
+   }
+ }
