@@ -119,7 +119,6 @@ header {
   .categories .category {
     display: block;
     height: 150px;
-    width: 150px;
     padding: 3px;
     margin: 20px 10px 10px 10px;
     border-radius: 5px;

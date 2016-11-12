@@ -155,7 +155,7 @@ header {
   .category {
     display: block;
     height: $rs * 10;
-    width: $rs * 10;
+    // min-width: $rs * 10;
     padding: 3px;
     margin: 20px 10px 10px 10px;
     border-radius: 5px;
