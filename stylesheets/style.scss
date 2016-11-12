@@ -114,8 +114,8 @@ header {
 .col-lg-2-4 {
   position: relative;
   min-height: 1px;
-  padding-right: 10px;
-  padding-left: 10px;
+  padding-right: $rs;
+  padding-left: $rs;
 }
 
 .col-xs-2-4 {
@@ -258,6 +258,9 @@ section {
   box-shadow: 0 1px 4px rgba(0,0,0,0.05);
   padding: 0;
   margin: 0 $rs * 2 $rs * 2 $rs * 2;
+  img {
+    width: 100%;
+  }
 }
 
 /*
